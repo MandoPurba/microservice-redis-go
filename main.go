@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	app := apps.New()
+	app := apps.New(apps.NewConfig())
 
 	ctx, cancel := signal.NotifyContext(
 		context.Background(),
